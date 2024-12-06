@@ -1,0 +1,52 @@
+This is a collection of my own personal notes to self for future reference interms of things that I encountered while working on this system
+
+# Fonts
+fonts are stored in the '/usr/share/fonts' directory
+use commands:
+    $ fc-list  -> to see the fonts that are installed
+    $ fc-cache -f -v  -> to force refreshing the font cache
+
+# Ports
+A way to check the ports that are in use are the respective activity using them
+use the command:("ss" is often pre-installed in most linux distros)
+    $ sudo ss -tlnp
+    $ sudo lsof -i -P -n  -> to get the details of open files by said ports
+    
+    If you want sth a bit easier on the eyes, just like "ss" you can use netstat (part of net-tools)
+    {actually older than "ss"}
+        Install net-tools: 
+            $ sudo apt-get install net-tools
+        run netstat:
+            $ sudo netstat -tlnp
+    [WARNING! "netstat" is depricated and was replaces by "ss"]
+
+# Github SSH
+How to set up the github ssh key for my ubuntu machine
+Generate the ssh key in terminal:
+    $ ssh-keygen -t rsa -b 4096
+Copy the ssh public key:
+	$ cat ~/.ssh/id_rsa.pub (assuming you used the default location to store your ssh key)
+Edit the ssh config file to set the location for github to refer to
+    $ nano ~/.ssh/config
+        and add this line:
+    Host github.com
+        IdentityFile ~/.ssh/id_rsa
+Try connecting to github using ssh:
+    $ ssh -T git@github.com
+    {
+        First time connecting will require your to respond with a full on "yes" to confrim and add github to ssh clients on your machine
+    }
+NOTE:
+    The ssh Public key is what is added to your 'https://github.com/settings/keys', make sure to keep the private key safe at all times
+
+
+# Creating and using a variable in terminal
+Generally:
+    $ My_variable=My_value
+    $ echo $My_variable
+
+more specifically for moving information around:
+    $ my_variable=$(cat <file_name> | grep <criteria>)
+    $ echo my_variable
+        or sth like:
+    $ sudo apt-get install $my_variable
