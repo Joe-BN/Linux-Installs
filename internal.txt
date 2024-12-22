@@ -50,3 +50,11 @@ more specifically for moving information around:
     $ echo my_variable
         or sth like:
     $ sudo apt-get install $my_variable
+
+
+how to setthe default user in wsl2 (22nd Dec, 2024)
+	in windows powershell: $ ubuntu1804 config --default-user <username>
+	then restart terminal
+
+
+
