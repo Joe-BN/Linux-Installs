@@ -6,6 +6,8 @@ use commands:
     $ fc-list  -> to see the fonts that are installed
     $ fc-cache -f -v  -> to force refreshing the font cache
 
+
+
 # Ports
 A way to check the ports that are in use are the respective activity using them
 use the command:("ss" is often pre-installed in most linux distros)
@@ -19,6 +21,8 @@ use the command:("ss" is often pre-installed in most linux distros)
         run netstat:
             $ sudo netstat -tlnp
     [WARNING! "netstat" is depricated and was replaces by "ss"]
+
+
 
 # Github SSH
 How to set up the github ssh key for my ubuntu machine
@@ -40,6 +44,8 @@ NOTE:
     The ssh Public key is what is added to your 'https://github.com/settings/keys', make sure to keep the private key safe at all times
 
 
+
+
 # Creating and using a variable in terminal
 Generally:
     $ My_variable=My_value
@@ -55,6 +61,3 @@ more specifically for moving information around:
 how to setthe default user in wsl2 (22nd Dec, 2024)
 	in windows powershell: $ ubuntu1804 config --default-user <username>
 	then restart terminal
-
-
-

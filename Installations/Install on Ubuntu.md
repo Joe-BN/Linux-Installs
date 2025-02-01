@@ -1,0 +1,9 @@
+- [ ] Docker
+- [ ] Git
+- [ ] Neovim
+- [ ] Nerd Fonts
+- [ ] Beehive studio / Postbird
+- [ ] VS Code
+- [ ] Obsidian
+- [ ] Spotify
+- [ ] 
