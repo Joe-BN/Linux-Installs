@@ -1,9 +1,9 @@
-- [ ] Docker
+- [ ] Docker & Podman
 - [ ] Git
 - [ ] Neovim
 - [ ] Nerd Fonts
-- [ ] Beehive studio / Postbird
+- [ ] Beehive studio &/ Postbird
 - [ ] VS Code
-- [ ] Obsidian
+- [ ] Obsidian (extentions)
 - [ ] Spotify
-- [ ] 
+- [ ] Firefox
